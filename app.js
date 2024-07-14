@@ -179,7 +179,6 @@ for (let i = 0; i < nums.length; i++) {
 console.log('Exercise 11 result:', odds);
 
 
-
 /*
 Exercise 12: FizzBuzz with arrays
 
@@ -199,11 +198,32 @@ Exercise 12: FizzBuzz with arrays
 Complete Exercise 12 in the space below:
 */
 
+let fizz = [];
+let buzz = [];
+let fizzbuzz = [];
+
+for (let i = 0; i < nums.length; i++) {
+    const num = nums[i];
+    if (num % 3 === 0 ) {
+        fizz.push(num);
+    }
+    if (num % 5 ===0) {
+        buzz.push(num);
+    }
+    if (num % 3 === 0 && num % 5 === 0) {
+        fizzbuzz.push(num);
+    }
+
+  }
+  
 
 
 console.log('Exercise 12 Results:');
 console.log('  fizz:', fizz);
 console.log('  buzz:', buzz);
 console.log('  fizzbuzz:', fizzbuzz);
+
+
+
 
 

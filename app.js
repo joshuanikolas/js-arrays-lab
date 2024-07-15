@@ -248,6 +248,54 @@ let numList = numArrays[numArrays.length -1]
 console.log('Exercise 13 result:', numList);
 
 
+/*
+Exercise 14: Accessing within nested arrays
+
+1) Retrieve the number `66` from the `numArrays` array. As part of this process
+   do not alter the original `numArrays` array.
+
+2) Assign it to a variable called `num`.
+
+Complete Exercise 14 in the space below:
+*/
+
+let num = 0
+
+numArrays.forEach((numArray) => {
+    console.log (numArray, 'inside a forEach')
+
+        for (let i = 0; i<numArray.length; i++) {
+            if (numArray [i] === 66) {
+                console.log(num, 'in the if statement')
+                num = numArray[i]
+            }
+        }
+})
+
+console.log('Exercise 14 result:', num);
+
+
+/*
+Exercise 15: Nested array sum
+
+1) Use nested loops or `forEach()` methods to sum up all numbers within 
+   `numArrays` nested arrays.
+   
+2) Assign the sum to a variable called `total`.
+
+Hint: Be sure to declare and initialize the total variable before the iterations.
+
+Complete Exercise 15 in the space below:
+*/
+
+let total = 0;
+numArrays.forEach(num => {
+    total += num;
+});
+
+
+console.log('Exercise 15 result:\n', total);
+
 
 
 

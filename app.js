@@ -289,8 +289,15 @@ Complete Exercise 15 in the space below:
 */
 
 let total = 0;
-numArrays.forEach(num => {
-    total += num;
+console.log(numArrays)
+numArrays.forEach(array  => {
+    console.log(array)
+    array.forEach((num) => {
+        console.log(num)
+
+
+        total += num;
+    })
 });
 
 
